@@ -11,8 +11,9 @@
   - 1 Placa ESP32
   - 1 Pino de LED
   - Cabos de conexões
-  - Cabo USB
+  - Cabo Micro USB
   - Breadboard
+  - Resistor
 - Em relação ao software, utilizamos a Arduino IDE, configurada para o ESP32.
 
 - Além disso, para interação via smartphone (Android), utilizamos o aplicativo **Serial Bluetooth**.
