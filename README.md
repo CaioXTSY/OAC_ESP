@@ -1,41 +1,52 @@
-### Trabalho ESP32
+## Trabalho ESP32
+
+### Cronograma do Projeto
 
 #### 14/09/2023
-- No dia **14/09/2023**, iniciamos a realização do trabalho. Começamos configurando o ambiente de trabalho, instalando as IDEs e os frameworks necessários. Iniciamos com a Arduino IDE e os respectivos frameworks para o seu funcionamento.
-- Como primeira etapa, optamos por um projeto mais simples: o controle de LEDs via Bluetooth. Para isso, instalamos as extensões **ArduinoBLE** e o pacote de drivers do ESP32, denominado **Expressif**.
-- Nesse dia, enfrentamos problemas de compatibilidade com alguns softwares, o que nos impediu de concluir o projeto.
+- No dia **14/09/2023**, iniciamos a realização do trabalho. Começamos configurando o ambiente de trabalho, instalando as IDEs e os frameworks necessários. Escolhemos a Arduino IDE e os respectivos frameworks para o seu funcionamento.
+- Como objetivo inicial, decidimos por um projeto mais simples: o controle de LEDs via Bluetooth. Para isso, adicionamos as extensões **ArduinoBLE** e o pacote de drivers **Expressif** para o ESP32.
+- Infelizmente, enfrentamos alguns obstáculos relacionados à compatibilidade de softwares, o que nos atrasou um pouco.
 
 #### 18/09/2023
-- No dia **18/09/2023**, conseguimos finalizar o projeto do LED Bluetooth. O obstáculo era a incompatibilidade dos cabos testados com o ESP32. Ao usar um cabo específico para o dispositivo, conseguimos fazê-lo funcionar corretamente.
-- Para este projeto, utilizamos os seguintes componentes:
-  - 1 Placa ESP32
-  - 1 Pino de LED
-  - Cabos de conexões
+- No dia **18/09/2023**, superamos os desafios e conseguimos finalizar o projeto do LED Bluetooth. A solução foi simples: substituir o cabo que estava causando incompatibilidade com o ESP32.
+- Componentes Utilizados:
+  - Placa ESP32
+  - LED
+  - Cabos de conexão
   - Cabo Micro USB
-  - Breadboard
+  - Protoboard
   - Resistor
-- Em relação ao software, utilizamos a Arduino IDE, configurada para o ESP32.
+- Em relação ao software, mantivemos a Arduino IDE, agora configurada para o ESP32. Para a interação via smartphone, optamos pelo aplicativo **Serial Bluetooth** no Android.
+- Com esse progresso, já começamos a planejar o projeto final.
 
-- Além disso, para interação via smartphone (Android), utilizamos o aplicativo **Serial Bluetooth**.
-- Ainda nesse dia, iniciamos a preparação para o projeto final, conforme solicitado:
+#### 20/09/2023
+- No dia **20/09/2023**, passamos o equipamento para outro membro da equipe testar em casa. O sensor até mostrou sinais de atividade, mas encontramos um problema: o sensor não estava sendo reconhecido pelo ESP32.
+
+#### 21/09/2023
+- De volta à sala de aula no **21/09/2023**, focamos no sensor. Mesmo após várias tentativas, ele não colaborou. Observamos que outro grupo conseguiu um resultado diferente usando o mesmo sensor. Tentamos replicar o método deles, mas sem sucesso. Com a autorização da professora, decidi levar o equipamento para casa e tentar mais um pouco.
+
+#### 25/09/2023
+- No dia **25/09/2023**, após muita dedicação e pesquisa, finalmente conseguimos fazer o sensor DHT11 funcionar! Com esse avanço, estávamos prontos para avançar para a etapa final do projeto.
+
+#### 28/09/2023
+- Com a autorização da professora, levei o ESP32 para casa no **28/09/2023**. O objetivo era montar o site e dar os toques finais no projeto. Após muita dedicação, conseguimos finalizar. O site estava funcionando perfeitamente, exibindo os dados do sensor em tempo real. 
 
 #### Especificação do Projeto Final (extraído do Classroom)
-- A atividade consiste em criar uma estação meteorológica usando o ESP32 que colete dados de temperatura e umidade, exibindo-os em uma página WEB.
+- 🌡 A atividade propõe a criação de uma estação meteorológica usando o ESP32. Esta estação deve coletar dados de temperatura e umidade e exibir essas informações em tempo real em uma página web.
   - Componentes Necessários:
     - Placa de desenvolvimento ESP32
-    - Sensor DHT11 ou DHT22 (temperatura e umidade)
+    - Sensor DHT11 ou DHT22
     - Protoboard e jumpers
-    - Cabo USB (programação e alimentação)
-    - Computador com Arduino IDE instalado
+    - Cabo USB
+    - Computador com Arduino IDE
   - Apresentação dos Dados:
-    - Criar uma página web HTML/CSS para exibir as leituras de temperatura e umidade em tempo real.
-    - A página deve atualizar automaticamente, sem necessidade de "refresh" pelo usuário.
-    - Incluir representação gráfica (ex: gráfico de linhas) mostrando tendências ao longo do tempo.
-    - A página web deve ser responsiva, adaptando-se a diversos dispositivos.
+    - Desenvolvimento de uma página web em HTML/CSS.
+    - Atualização automática dos dados, sem necessidade de atualização manual.
+    - Representação gráfica das leituras, mostrando tendências ao longo do tempo.
+    - Design responsivo, adaptável a diferentes dispositivos.
   - Implementação completa com a placa garante 2 pontos extras.
 - **Entrega**:
-  - Criar o projeto no GitHub e fornecer o link. O repositório deve conter código e especificações completas.
-  - Preencher formulário com nome do grupo e link do GitHub.
-  - Apresentar resultados ao professor nas datas estipuladas.
-  - Atividade deve ser realizada em grupos de quatro estudantes e será desenvolvida durante as aulas.
-
+  - Criação de um projeto no GitHub com código e especificações.
+  - Formulário preenchido com nome do grupo e link do GitHub.
+  - Apresentação dos resultados ao professor nas datas estipuladas.
+  - Atividade em grupos de quatro estudantes, desenvolvida durante as aulas.
