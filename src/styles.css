@@ -1,0 +1,193 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.6;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-section, .data-box, .chart-section {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+}
+
+.team-container {
+  position: relative;
+  display: inline-block;
+  z-index: 1000;
+}
+
+#team-btn {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#team-btn:hover {
+  background-color: #357ab7;
+  transform: scale(1.05);
+}
+
+#team-btn:active {
+  transform: scale(1);
+}
+
+.team-hover {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  width: 250px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  transform: translateX(-50%) translateY(-10px);
+}
+
+.data-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 600px;
+}
+
+.data-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  flex: 1;
+  text-align: center;
+  min-width: 250px;
+}
+
+.chart-section {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.github-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#github-link:hover {
+  color: #4a90e2;
+}
+
+#github-logo {
+  width: 30px;
+  height: 30px;
+}
+
+#temperatureUnit {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#temperatureUnit:hover {
+  background-color: #357ab7;
+  transform: scale(1.05);
+}
+
+#temperatureUnit:active {
+  transform: scale(1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 480px) {
+  #temperatureUnit {
+      padding: 8px 16px;
+      font-size: 14px;
+  }
+}
+
+.temperature-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.temp-btn {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.temp-btn:hover {
+  background-color: #357ab7;
+}
+
+.temp-btn.active {
+  background-color: #2a5d9f;
+}
