@@ -50,3 +50,32 @@
   - Formulário preenchido com nome do grupo e link do GitHub.
   - Apresentação dos resultados ao professor nas datas estipuladas.
   - Atividade em grupos de quatro estudantes, desenvolvida durante as aulas.
+
+### 🛠 Descrição do Código e Tecnologias Usadas
+
+**1. HTML & CSS**
+- Estruturamos a página com **HTML5**, definindo blocos visuais.
+- Utilizamos **UIKit** para estilização.
+- **AOS** adiciona animações suaves.
+- Ícones do **FontAwesome** para interface visual.
+
+**2. JavaScript**
+- `script.js` atualiza dados e gráfico.
+- **Chart.js** para gráficos.
+- Funções para conversões de temperatura.
+
+**3. Backend (Python)**
+- Desenvolvido com **Flask**.
+- **flask_cors** para CORS.
+- API com rota `/data` para GET e POST.
+
+**4. Firmware (C++)**
+- Código para ESP32.
+- Biblioteca **DHT** para o sensor DHT11.
+- Conexão Wi-Fi e envio de leituras via HTTP POST.
+- Função `loop` atualiza dados a cada 2s.
+
+**Componentes e Bibliotecas:**
+- **ESP32**: Microcontrolador.
+- **DHT11**: Sensor de temperatura e umidade.
+- **WiFi.h**, **HTTPClient.h**, **ArduinoJson.h**.
