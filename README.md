@@ -79,3 +79,7 @@
 - **ESP32**: Microcontrolador.
 - **DHT11**: Sensor de temperatura e umidade.
 - **WiFi.h**, **HTTPClient.h**, **ArduinoJson.h**.
+
+# Agradecimentos Especiais
+- Gostaria de agradecer a essa oportunidade à professora **Raquel Cabral** por proporcionar essa experiência incrivel.
+- e ao Gustavo
